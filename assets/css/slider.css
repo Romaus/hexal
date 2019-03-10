@@ -1,0 +1,32 @@
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 1px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 6px;
+    background-color: #ddd2c5;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #8b8784;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #8b8784;
+  }
